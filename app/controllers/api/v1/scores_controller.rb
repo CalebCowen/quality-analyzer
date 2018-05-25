@@ -1,4 +1,4 @@
-class Api::V1::ScoreController < ApplicationController
+class Api::V1::ScoresController < ApplicationController
 
   def create
     cat = Category.find_or_create_by(name: params[:category])

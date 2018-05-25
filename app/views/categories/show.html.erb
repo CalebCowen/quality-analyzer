@@ -1,0 +1,14 @@
+
+<% @category.get_blur_scores.each do |score| %>
+  <% score.keys.each do |key| %>
+    Blur Score: <%= key %></br>
+    Amount: <%= score[key] %></br>
+  <% end %>
+<% end %>
+
+<% @category.get_brightness_scores.each do |score| %>
+  <% score.keys.each do |key| %>
+    Brightness Score: <%= key %></br>
+    Amount: <%= score[key] %></br>
+  <% end %>
+<% end %>
