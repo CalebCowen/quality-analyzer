@@ -1,9 +1,9 @@
-<% @blur_scores.keys.each do |key| %>
-  Blur Score: <%= key %></br>
-  Amount: <%= @blur_scores[key] %></br>
+<% @blur_scores.each do |score| %>
+  Blur Score: <%= score[0] %></br>
+  Amount: <%= score[1] %></br>
 <% end %>
 
-<% @brightness_scores.keys.each do |key| %>
-  Brightness Score: <%= key %></br>
-  Amount: <%= @brightness_scores[key] %></br>
+<% @brightness_scores.each do |score| %>
+  Brightness Score: <%= score[0] %></br>
+  Amount: <%= score[1] %></br>
 <% end %>
